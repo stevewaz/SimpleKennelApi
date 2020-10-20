@@ -338,3 +338,5 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/SimpleKennelApi/Migrations
+/SimpleKennelApi/SimpleKennel.db

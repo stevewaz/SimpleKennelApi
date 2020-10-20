@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SimpleKennelApi.Models;
+
 
 namespace SimpleKennelApi
 {
@@ -32,6 +34,8 @@ namespace SimpleKennelApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SimpleKennelApi", Version = "v1" });
             });
+
+            services.AddDbContext<SimpleKennelContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
